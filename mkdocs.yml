@@ -40,3 +40,4 @@ nav:
   - Tekninen Dokumentaatio:
       - Lentoanalyysi: technical/process.md
       - Työkalut & Tekniikat: technical/tools_and_tech.md # UUSI SIVU
+      - Datan Haku (IoT-projekti): technical/data_retrieval.md
