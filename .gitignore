@@ -1,0 +1,6 @@
+# MkDocs luotu sivu
+site/
+
+# Pythonin väliaikaistiedostot
+*.pyc
+__pycache__/
