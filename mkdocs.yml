@@ -1,1 +1,42 @@
-site_name: My Docs
+site_name: Ilmailun Dokumentaatioportaali
+
+# Käyttämäsi teema ja sen asetukset
+theme:
+  name: material
+  language: fi
+  features:
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Vaihda tummaan tilaan
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Vaihda vaaleaan tilaan
+
+# Dokumentaation rakenne (NAV)
+nav:
+  - Etusivu: index.md
+  - Ilmailu-informatiikka:
+      - 🛰️ METAR (Sääraportti):
+          - Johdanto: metar/index.md
+          - Purkuopas: metar/decode.md
+      - ⛈️ TAF (Ennuste):
+          - Johdanto: taf/index.md
+          - Purkuopas: taf/decode.md
+      - 🚧 NOTAM (Ilmoitukset):
+          - Johdanto: notam/index.md
+          - Lyhenneluettelo: notam/notam_codes.md
+  - Tekninen Dokumentaatio:
+      - Lentoanalyysi: technical/process.md
+      - Työkalut & Tekniikat: technical/tools_and_tech.md # UUSI SIVU
