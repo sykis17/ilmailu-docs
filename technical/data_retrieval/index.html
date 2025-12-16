@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../process/">
+        <link rel="prev" href="../tools_and_tech/">
       
-      
-        <link rel="next" href="../data_retrieval/">
       
       
         
@@ -23,7 +21,7 @@
     
     
       
-        <title>Työkalut & Tekniikat - Ilmailun Dokumentaatioportaali</title>
+        <title>Datan Haku (IoT-projekti) - Ilmailun Dokumentaatioportaali</title>
       
     
     
@@ -74,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dokumentaation-tyokalut-tekniikat-docs-as-code" class="md-skip">
+        <a href="#saadatan-haku-ja-kasittely-iotpython-projekti" class="md-skip">
           Hyppää sisältöön
         </a>
       
@@ -110,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Työkalut & Tekniikat
+              Datan Haku (IoT-projekti)
             
           </span>
         </div>
@@ -744,6 +742,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools_and_tech/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Työkalut & Tekniikat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -763,7 +789,7 @@
   <span class="md-ellipsis">
     
   
-    Työkalut & Tekniikat
+    Datan Haku (IoT-projekti)
   
 
     
@@ -781,7 +807,7 @@
   <span class="md-ellipsis">
     
   
-    Työkalut & Tekniikat
+    Datan Haku (IoT-projekti)
   
 
     
@@ -807,10 +833,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-versiohallinta-ja-julkaisu" class="md-nav__link">
+  <a href="#prosessi" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Versiohallinta ja Julkaisu
+        Prosessi
       
     </span>
   </a>
@@ -818,10 +844,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-dokumentaatioymparisto" class="md-nav__link">
+  <a href="#kaytetyt-teknologiat" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Dokumentaatioympäristö
+        Käytetyt teknologiat
       
     </span>
   </a>
@@ -832,34 +858,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../data_retrieval/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Datan Haku (IoT-projekti)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -899,10 +897,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-versiohallinta-ja-julkaisu" class="md-nav__link">
+  <a href="#prosessi" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Versiohallinta ja Julkaisu
+        Prosessi
       
     </span>
   </a>
@@ -910,10 +908,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-dokumentaatioymparisto" class="md-nav__link">
+  <a href="#kaytetyt-teknologiat" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Dokumentaatioympäristö
+        Käytetyt teknologiat
       
     </span>
   </a>
@@ -937,73 +935,42 @@
 
 
 
-<h1 id="dokumentaation-tyokalut-tekniikat-docs-as-code">🛠️ Dokumentaation Työkalut &amp; Tekniikat (Docs-as-Code)</h1>
-<p>Tämä projekti on toteutettu <strong>Docs-as-Code</strong> -metodologialla. Tämä lähestymistapa varmistaa, että dokumentaatio on yhtä jäsenneltyä, auditoitavissa olevaa ja versioitua kuin itse koodi.</p>
-<p>Alla on yhteenveto projektiin käytetyistä teknologioista:</p>
-<h2 id="1-versiohallinta-ja-julkaisu">1. Versiohallinta ja Julkaisu</h2>
+<h1 id="saadatan-haku-ja-kasittely-iotpython-projekti">💻 Säädatan Haku ja Käsittely (IoT/Python-projekti)</h1>
+<p>Dokumentaation ylläpidon lisäksi ymmärrän datan lähteen ja ohjelmallisen käsittelyn. Olen toteuttanut IoT-projektin, jonka tarkoituksena on hakea reaaliaikaista ilmailusäädataa ja käsitellä sitä ohjelmallisesti.</p>
+<h2 id="prosessi">Prosessi</h2>
+<p>Tämä projekti demontroi Pythonin kykyä integroitua ulkoisiin lentosääpalveluihin (API) ja esikäsittelyyn ennen operatiivista käyttöä. </p>
+<ol>
+<li><strong>Datan haku (API Integration):</strong> Käytetään Python-kirjastoja (esim. <code>requests</code>) METAR- ja TAF-datan hakemiseen suoraan virallisista lentosääpalveluista (esim. NOAA tai Aviamet).</li>
+<li><strong>Jäsentäminen (Parsing):</strong> Raakakoodi (esim. <code>EFHK 151950Z 30010KT 9999...</code>) on jäsennettävä strukturoiduksi dataksi (esim. JSON-objektiksi).<ul>
+<li><strong>Tulos:</strong> Erottaa Tuulen (Wind), Näkyvyyden (Visibility) ja Pilvisyyden (Clouds) omiksi muuttujikseen.</li>
+</ul>
+</li>
+<li><strong>Hälytykset ja Visualisointi:</strong> Jäsennelty data voidaan syöttää visualisointialustalle (esim. Grafana) tai käyttää hälytysjärjestelmien luomiseen (esim. ilmoitus, jos näkyvyys laskee alle 5000 metrin).</li>
+</ol>
+<h2 id="kaytetyt-teknologiat">Käytetyt teknologiat</h2>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Työkalu</th>
-<th style="text-align: left;">Rooli projektissa</th>
-<th style="text-align: left;">Ammattimainen etu</th>
+<th style="text-align: left;">Teknologia</th>
+<th style="text-align: left;">Tehtävä</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Git</strong></td>
-<td style="text-align: left;">Kaikkien sisällön muutosten ja historian hallinta.</td>
-<td style="text-align: left;">Mahdollistaa auditoitavuuden ja palautuksen (rollback) mihin tahansa aiempaan versioon.</td>
+<td style="text-align: left;"><strong>Python</strong></td>
+<td style="text-align: left;">Datan haku ja jäsentämislogiikka.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>GitHub</strong></td>
-<td style="text-align: left;">Etäsäilö (Remote Repository) ja yhteistyöalusta.</td>
-<td style="text-align: left;">Ylläpitää koodin ja dokumentaation versionhallintaa. Koodi on avoinna tarkastelulle.</td>
+<td style="text-align: left;"><strong>JSON/XML</strong></td>
+<td style="text-align: left;">Rajapintojen (API) palauttaman tiedon muoto.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>GitHub Pages</strong></td>
-<td style="text-align: left;">Dokumentaatioportaalin ilmainen ja nopea julkaisupalvelu.</td>
-<td style="text-align: left;">Mahdollistaa jatkuvan julkaisun (Continuous Deployment) suoraan Git-haarasta (branch).</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Personal Access Token (PAT)</strong></td>
-<td style="text-align: left;">Turvallinen autentikointimenetelmä julkaisun aikana.</td>
-<td style="text-align: left;">Välttää salasanan tallennuksen, mikä on kriittinen tietoturvakäytäntö.</td>
+<td style="text-align: left;"><strong>MQTT-protokolla (IoT)</strong></td>
+<td style="text-align: left;">Reaaliaikaisen datan siirto pilvipalveluun (esim. Azure tai AWS) visualisointia varten.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="2-dokumentaatioymparisto">2. Dokumentaatioympäristö</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Työkalu</th>
-<th style="text-align: left;">Rooli projektissa</th>
-<th style="text-align: left;">Ominaisuuksia</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>MkDocs</strong></td>
-<td style="text-align: left;"><strong>Static Site Generator</strong> (Staattisen sivuston generaattori).</td>
-<td style="text-align: left;">Muuntaa Markdown-tekstit (esim. metar_codes.md) nopeasti puhtaaksi HTML/CSS-portaalin muotoon.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>MkDocs Material</strong></td>
-<td style="text-align: left;">Käyttöliittymä (UI) ja teema.</td>
-<td style="text-align: left;">Tarjoaa responsiivisen, modernin ja ammattimaisen ulkoasun (esim. tumma tila, hakutoiminto).</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Markdown</strong></td>
-<td style="text-align: left;">Sisällön kirjoituskieli.</td>
-<td style="text-align: left;">Kevyt ja helppo koodata. Mahdollistaa <strong>Admonitions</strong> (huomautuslaatikot) ja <strong>Tabs</strong> (välilehdet) jäsennellyn tiedon esittämiseen.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>ghp-import</strong></td>
-<td style="text-align: left;">Automatisoitu julkaisu.</td>
-<td style="text-align: left;">Mahdollistaa yhden komennon (<code>mkdocs gh-deploy</code>) julkaisuprosessin.</td>
-</tr>
-</tbody>
-</table>
+<p>Tämä projekti osoittaa kykyni siirtyä dokumentoinnista suoraan tekniseen järjestelmäkehitykseen.</p>
 
 
 
