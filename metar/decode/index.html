@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Notam codes - My Docs</title>
+        <title>METAR-koodin purkuopas (Reference Guide) - My Docs</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../css/brands.min.css" rel="stylesheet">
@@ -38,24 +38,24 @@
                                 <a href="../.." class="nav-link">Welcome to MkDocs</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Metar</a>
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Metar</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../metar/" class="dropdown-item">🛰️ METAR (Meteorological Aerodrome Report)</a>
+    <a href="../" class="dropdown-item">🛰️ METAR (Meteorological Aerodrome Report)</a>
 </li>
                                     
 <li>
-    <a href="../../metar/decode/" class="dropdown-item">METAR-koodin purkuopas (Reference Guide)</a>
+    <a href="./" class="dropdown-item active" aria-current="page">METAR-koodin purkuopas (Reference Guide)</a>
 </li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Notam</a>
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Notam</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Notam codes</a>
+    <a href="../../notam/notam_codes/" class="dropdown-item">Notam codes</a>
 </li>
                                 </ul>
                             </li>
@@ -68,12 +68,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../../metar/decode/" class="nav-link">
+                                <a rel="prev" href="../" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="../../notam/notam_codes/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -94,12 +94,92 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#metar-koodin-purkuopas-reference-guide" class="nav-link">METAR-koodin purkuopas (Reference Guide)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#koodin-rakenne-ja-tulkinta" class="nav-link">Koodin Rakenne ja Tulkinta</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-</div>
+<h1 id="metar-koodin-purkuopas-reference-guide">METAR-koodin purkuopas (Reference Guide)</h1>
+<p>METAR (Meteorological Aerodrome Report) on standardoitu, koodattu viesti, joka sisältää kriittisiä, reaaliaikaisia säätietoja lentoasemilta. Tämän oppaan tarkoituksena on purkaa koodin osat ja niiden merkitys.</p>
+<blockquote>
+<p><strong>Esimerkki METAR-viesti:</strong> <code>EFHK 151950Z 30010KT 9999 VCSH BKN015CB 01/M01 Q1015 NOSIG</code></p>
+</blockquote>
+<h2 id="koodin-rakenne-ja-tulkinta">Koodin Rakenne ja Tulkinta</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Ryhmä</th>
+<th style="text-align: left;">Esimerkki (EFHK)</th>
+<th style="text-align: left;">Selite</th>
+<th style="text-align: left;">Arvot / Koodit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Asema</strong></td>
+<td style="text-align: left;"><code>EFHK</code></td>
+<td style="text-align: left;">Lentoaseman ICAO-koodi.</td>
+<td style="text-align: left;">Nelikirjaiminen tunnus (esim. EFHK, KLAX).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Aika</strong></td>
+<td style="text-align: left;"><code>151950Z</code></td>
+<td style="text-align: left;">Raportin päivä (15.) ja aika (19:50) UTC-ajan (Z) mukaan.</td>
+<td style="text-align: left;">DDHHMMZ</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Tuuli</strong></td>
+<td style="text-align: left;"><code>30010KT</code></td>
+<td style="text-align: left;">Tuulen suunta (300 astetta) ja nopeus (10 solmua).</td>
+<td style="text-align: left;"><strong>VRB</strong>: Vaihteleva tuuli. <strong>GxxKT</strong>: Puuskien nopeus.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Näkyvyys</strong></td>
+<td style="text-align: left;"><code>9999</code></td>
+<td style="text-align: left;">Vaakanäkyvyys 10 km tai enemmän.</td>
+<td style="text-align: left;">Neljä numeroa metreissä.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sääilmiöt</strong></td>
+<td style="text-align: left;"><code>VCSH</code></td>
+<td style="text-align: left;">Lähellä oleva sadekuuro (Vicininity Shower).</td>
+<td style="text-align: left;"><strong>+</strong> voimakas, <strong>TS</strong> ukkonen, <strong>SN</strong> lumi.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pilvet</strong></td>
+<td style="text-align: left;"><code>BKN015CB</code></td>
+<td style="text-align: left;">Rikkonainen (Broken) pilvikerros 1500 jalassa. Kummulonimbukset (CB) havaittu.</td>
+<td style="text-align: left;"><strong>FEW/SCT/BKN/OVC</strong>: Peittoaste. <strong>CB</strong>: Kyyhnelpilvi.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lämpötila/Kastepiste</strong></td>
+<td style="text-align: left;"><code>01/M01</code></td>
+<td style="text-align: left;">Lämpötila 1 °C, kastepiste -1 °C.</td>
+<td style="text-align: left;"><strong>M</strong>: Miinusasteet (esim. M05).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>QNH</strong></td>
+<td style="text-align: left;"><code>Q1015</code></td>
+<td style="text-align: left;">Merenpinnan tasolle korjattu ilmanpaine (QNH) 1015 hehtopascalia.</td>
+<td style="text-align: left;">Qxxxx (hPa).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lisätieto</strong></td>
+<td style="text-align: left;"><code>NOSIG</code></td>
+<td style="text-align: left;">Ei merkittäviä muutoksia ennusteessa (No Significant Change).</td>
+<td style="text-align: left;">Useita lyhenteitä käytössä.</td>
+</tr>
+</tbody>
+</table></div>
             </div>
         </div>
 
